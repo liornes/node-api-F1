@@ -1,0 +1,32 @@
+{
+  "name": "api-f1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx --env-file=.env src/server.ts",
+    "start:watch": "tsx watch --env-file=.env src/server.ts",
+    "app": "tsup src",
+    "start:app": "npm run app && --env-file=.env node/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liornes/node-api-F1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liornes/node-api-F1/issues"
+  },
+  "homepage": "https://github.com/liornes/node-api-F1#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "fastify": "^5.4.0"
+  }
+}
